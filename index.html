@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tomás Valentino Pianelli — CV</title>
+<meta name="description" content="Curriculum Vitae de Tomás Valentino Pianelli. Paid Media & Performance Marketing Specialist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#111111;
+    --gray:#555555;
+    --line-gray:#d8d8d8;
+    --paper:#ffffff;
+    --maxw: 760px;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--black);
+    font-family:'Source Serif 4', Georgia, serif;
+    line-height:1.55;
+    font-size:16px;
+  }
+  a{ color:var(--black); text-decoration-color:var(--gray); }
+  a:hover{ color:var(--gray); }
+
+  .sheet{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:72px 24px 100px;
+  }
+
+  /* HEADER */
+  .cv-header{
+    display:flex;
+    gap:32px;
+    align-items:flex-start;
+    border-bottom:2px solid var(--black);
+    padding-bottom:36px;
+    margin-bottom:56px;
+  }
+  .cv-header img{
+    width:168px;
+    height:auto;
+    border:1px solid var(--black);
+  }
+  .cv-header-text h1{
+    font-size:1.9rem;
+    font-weight:700;
+    margin:0 0 4px;
+    letter-spacing:-0.01em;
+  }
+  .cv-header-text .role{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.82rem;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:var(--gray);
+    margin:0 0 14px;
+  }
+  .cv-contact{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--black);
+    display:flex;
+    flex-wrap:wrap;
+    gap:4px 14px;
+  }
+  .cv-contact a{ text-decoration:underline; text-underline-offset:2px; }
+
+  /* SECTIONS */
+  section{ margin-bottom:64px; }
+  section:last-child{ margin-bottom:0; }
+  h2.section-title{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.8rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    font-weight:500;
+    margin:0 0 26px;
+    padding-bottom:12px;
+    border-bottom:1px solid var(--black);
+  }
+
+  .profile-text{ margin:0; color:var(--black); }
+
+  /* EXPERIENCIA / EDUCACION entries */
+  .entry{
+    margin-bottom:32px;
+    padding-bottom:32px;
+    border-bottom:1px solid var(--line-gray);
+  }
+  .entry:last-child{ margin-bottom:0; padding-bottom:0; border-bottom:none; }
+  .entry-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .entry-head h3{
+    font-size:1.08rem;
+    font-weight:700;
+    margin:0;
+  }
+  .entry-date{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.76rem;
+    color:var(--gray);
+    white-space:nowrap;
+  }
+  .entry-sub-row{
+    margin:2px 0 10px;
+  }
+  .entry-sub{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--gray);
+    margin:0;
+  }
+  .entry-link{
+    display:inline-block;
+    margin-top:16px;
+    background:var(--black);
+    color:#ffffff;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.76rem;
+    padding:10px 18px;
+    text-decoration:none;
+    border:1px solid var(--black);
+  }
+  .entry-link:hover{ background:#ffffff; color:var(--black); }
+  .entry ul{
+    margin:0;
+    padding-left:18px;
+  }
+  .entry li{
+    margin-bottom:9px;
+    font-size:0.96rem;
+  }
+  .entry li:last-child{ margin-bottom:0; }
+  .entry p.plain{ margin:0; font-size:0.96rem; color:var(--black); }
+
+  /* HABILIDADES */
+  .skills-block{ margin-bottom:24px; }
+  .skills-block:last-child{ margin-bottom:0; }
+  .skills-block h4{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    font-weight:500;
+    margin:0 0 6px;
+    color:var(--gray);
+  }
+  .skills-block p{ margin:0; font-size:0.95rem; }
+
+  /* CERTIFICACIONES */
+  .cert-cols{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px 40px;
+  }
+  @media (max-width:560px){ .cert-cols{ grid-template-columns:1fr; } }
+  .cert-group{ margin-bottom:26px; }
+  .cert-group h4{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.76rem;
+    color:var(--gray);
+    margin:0 0 6px;
+  }
+  .cert-group ul{ margin:0; padding-left:18px; }
+  .cert-group li{ font-size:0.92rem; margin-bottom:4px; }
+  .cert-link{
+    background:none;
+    border:none;
+    padding:0;
+    font:inherit;
+    color:var(--black);
+    text-decoration:underline;
+    text-underline-offset:2px;
+    text-decoration-color:var(--gray);
+    cursor:pointer;
+    text-align:left;
+  }
+  .cert-link:hover{ color:var(--gray); }
+
+  /* MODAL DE CERTIFICADO */
+  .cert-modal-fondo{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(17,17,17,0.7);
+    z-index:1000;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .cert-modal-fondo.abierto{ display:flex; }
+  .cert-modal-caja{
+    background:var(--paper);
+    border:1px solid var(--black);
+    width:min(720px, 100%);
+    max-height:88vh;
+    display:flex;
+    flex-direction:column;
+  }
+  .cert-modal-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:14px 18px;
+    border-bottom:1px solid var(--black);
+  }
+  .cert-modal-titulo{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.82rem;
+    margin:0;
+    font-weight:500;
+  }
+  .cert-modal-acciones{ display:flex; align-items:center; gap:14px; }
+  .cert-modal-descargar{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.74rem;
+    text-decoration:underline;
+    text-underline-offset:2px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .cert-modal-cerrar{
+    background:none;
+    border:1px solid var(--black);
+    width:26px; height:26px;
+    cursor:pointer;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.8rem;
+    line-height:1;
+  }
+  .cert-modal-body{
+    padding:0;
+    overflow:auto;
+    background:#f4f4f4;
+  }
+  .cert-modal-body iframe, .cert-modal-body img{
+    display:block;
+    width:100%;
+    height:70vh;
+    border:none;
+    object-fit:contain;
+    background:#f4f4f4;
+  }
+  .cert-modal-body img{ height:auto; }
+
+  /* IDIOMAS */
+  .lang-list{ display:flex; gap:36px; flex-wrap:wrap; }
+  .lang-list div span{ display:block; }
+  .lang-list .lname{ font-family:'IBM Plex Mono', monospace; font-size:0.76rem; color:var(--gray); }
+  .lang-list .llevel{ font-size:0.96rem; }
+
+  footer{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--line-gray);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    color:var(--gray);
+    text-align:center;
+  }
+
+  @media print{
+    body{ font-size:13px; }
+    .sheet{ padding:0; max-width:100%; }
+  }
+
+  @media (max-width:520px){
+    .cv-header{ flex-direction:column; align-items:flex-start; }
+    .entry-head{ flex-direction:column; align-items:flex-start; gap:2px; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="cv-header">
+    <img src="Fondo de “Perfil” eliminado.png" alt="Retrato de Tomás Valentino Pianelli">
+    <div class="cv-header-text">
+      <h1>Tomás Valentino Pianelli</h1>
+      <p class="role">Paid Media &amp; Performance Marketing Specialist · UX/UI</p>
+      <div class="cv-contact">
+        <a href="mailto:tomas.v.pianelli@gmail.com">tomas.v.pianelli@gmail.com</a>
+        <span>+54 9 11 6925-2806</span>
+        <span>La Plata, Argentina</span>
+        <a href="https://www.linkedin.com/in/tomas-valentino-pianelli-8616182b2/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.behance.net/tomspianelli" target="_blank" rel="noopener">Behance</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Perfil profesional</h2>
+    <p class="profile-text">Especialista en Paid Media y Performance Marketing con experiencia en Google Ads y Meta Ads para entornos B2B y B2C. Orientado a datos, planificación estratégica, análisis de métricas, optimización de embudos y elaboración de reportes. Formación en Diseño UX/UI y Multimedial aplicada al desarrollo de creatividades e interfaces digitales alineadas a objetivos de negocio.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Educación</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Licenciatura en Diseño Multimedial</h3>
+        <span class="entry-date">2024 — actualidad</span>
+      </div>
+      <p class="plain">UNLP — Universidad Nacional de La Plata</p>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Bachiller en Economía y Administración</h3>
+        <span class="entry-date">2016 — 2021</span>
+      </div>
+      <p class="plain">Establecimiento Educativo Argentino e Instituto Modelo Banfield</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Experiencia laboral</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Freelancer</h3>
+        <span class="entry-date">2026 — actualidad</span>
+      </div>
+      <div class="entry-sub-row">
+        <p class="entry-sub">Paid Media &amp; Performance Specialist</p>
+      </div>
+      <ul>
+        <li>Análisis de negocios, competencia y activos digitales para la definición de estrategias enfocadas en performance.</li>
+        <li>Planificación estratégica de campañas y acompañamiento en toma de decisiones basada en métricas y objetivos comerciales.</li>
+        <li>Desarrollo de dashboards personalizados en Looker Studio para centralización de datos, análisis de métricas clave y optimización de performance.</li>
+        <li>Implementación y configuración de tracking digital mediante Meta Pixel, eventos y conversiones.</li>
+        <li>Gestión y optimización continua de campañas PPC en Meta Ads y Google Ads con foco en adquisición y conversión.</li>
+        <li>Administración simultánea de múltiples campañas con enfoque en eficiencia publicitaria y mejora continua.</li>
+      </ul>
+      <!-- 👉 PONÉ ACÁ EL LINK: reemplazá REEMPLAZAR_LINK_1 por la URL del trabajo/sitio -->
+      <a class="entry-link" href="REEMPLAZAR_LINK_1" target="_blank" rel="noopener">Ver sitio →</a>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Performanze</h3>
+        <span class="entry-date">2024 — 2026</span>
+      </div>
+      <div class="entry-sub-row">
+        <p class="entry-sub">España — PPC y Performance Marketing Specialist</p>
+      </div>
+      <ul>
+        <li>Gestión estratégica y optimización continua de campañas en Google Ads y Meta Ads enfocadas en adquisición, conversión y mejora de performance para cuentas B2B y B2C.</li>
+        <li>Desarrollo de estrategias full-funnel con foco en adquisición, conversión y escalabilidad: buyer personas, keyword research, análisis de competencia y setup de campañas.</li>
+        <li>Análisis de métricas y optimización basada en performance para la toma de decisiones estratégicas: seguimiento de KPIs (ROAS, CPA, CAC, CTR, CVR) y elaboración de reportes semanales, quincenales y mensuales.</li>
+        <li>Implementación y mantenimiento de tracking de conversiones con Google Tag Manager y GA4 para optimizar medición, atribución y toma de decisiones.</li>
+        <li>Desarrollo de creatividades visuales y piezas enfocadas en rendimiento publicitario y comunicación de marca para anuncios y email marketing, junto con redacción de blogs como soporte de contenido.</li>
+        <li>Análisis de experiencia de usuario y detección de oportunidades de mejora enfocadas en conversión (CRO).</li>
+        <li>Colaboración continua con equipos de marketing y performance para alineación estratégica y seguimiento de cuentas.</li>
+      </ul>
+      <!-- 👉 PONÉ ACÁ EL LINK: reemplazá REEMPLAZAR_LINK_2 por la URL del trabajo/sitio -->
+      <a class="entry-link" href="https://www.performanze.com/" target="_blank" rel="noopener">Ver sitio →</a>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Estética Dn</h3>
+        <span class="entry-date">2023 — 2024</span>
+      </div>
+      <div class="entry-sub-row">
+        <p class="entry-sub">Community Manager y Paid Media Specialist</p>
+      </div>
+      <ul>
+        <li>Planificación y ejecución de estrategia de marketing digital local orientada a generación de leads.</li>
+        <li>Gestión estratégica y optimización continua de campañas en Meta Ads para captación y conversiones.</li>
+        <li>Optimización de Perfil de Empresa en Google (Google Business Profile) para aumentar visibilidad y tráfico local.</li>
+        <li>Diseño de piezas gráficas y contenido visual para redes sociales.</li>
+      </ul>
+      <!-- 👉 PONÉ ACÁ EL LINK: reemplazá REEMPLAZAR_LINK_3 por la URL del trabajo/sitio -->
+      <a class="entry-link" href="https://www.instagram.com/estetica.dn?igsh=anRia3I0YW8xcGIz" target="_blank" rel="noopener">Ver sitio →</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Habilidades</h2>
+    <div class="skills-block">
+      <h4>Marketing Digital &amp; Performance</h4>
+      <p>Paid Media (Google Ads · Meta Ads), estrategia full-funnel, CRO, SEO, email marketing, análisis de métricas, dashboards, GA4, Google Tag Manager, Looker Studio, keyword research, buyer persona, análisis de competencia, tracking y atribución.</p>
+    </div>
+    <div class="skills-block">
+      <h4>Diseño &amp; Herramientas</h4>
+      <p>Figma, Photoshop, Illustrator, Affinity, CapCut, Canva, Semrush, Mailchimp, Brevo, WordPress, HTML, CSS, JavaScript, Java.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Idiomas</h2>
+    <div class="lang-list">
+      <div><span class="lname">Español</span><span class="llevel">Nativo</span></div>
+      <div><span class="lname">Inglés</span><span class="llevel">Técnico (lectura de documentación y plataformas)</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Certificaciones</h2>
+    <!-- 👉 CÓMO CARGAR CADA CERTIFICADO:
+         En cada botón de abajo, reemplazá la ruta 'REEMPLAZAR_RUTA_...pdf' por la ubicación real
+         de tu archivo (por ejemplo: 'certificados/busqueda-google-ads.pdf' o una imagen .jpg/.png).
+         El segundo parámetro es el tipo de archivo: 'pdf' o 'img'.
+         Subí los archivos reales a una carpeta /certificados junto a este index.html. -->
+    <div class="cert-cols">
+      <div>
+        <div class="cert-group">
+          <h4>Google Ads</h4>
+          <ul>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Búsqueda de Google Ads 2026.pdf')">Búsqueda</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Display de Google Ads 2026.pdf')">Display</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Vídeo de Google Ads 2026.pdf')">Video</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Aplicaciones de Google Ads.pdf')">Aplicaciones</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Anuncios de Shopping Basados en IA.pdf')">Shopping con IA</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Examen de certificación en optimización de conversiones.pdf')">Optimización de Conversiones</button></li>
+          </ul>
+        </div>
+        <div class="cert-group">
+          <h4>Marketing Digital</h4>
+          <ul>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Fundamentos de Marketing Digital.pdf')">Fundamentos de Marketing Digital — Google &amp; The Open University</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Publicidad en Redes Avanzado.png')">Publicidad en Redes Avanzado — Coderhouse</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Storytelling en el Marketing Digital.pdf')">Storytelling en Marketing Digital — University of Chicago &amp; Santander</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Curso Marketing Digital.pdf')">Experto Marketing Digital — CSB Global</button></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="cert-group">
+          <h4>Diseño &amp; Tecnología</h4>
+          <ul>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Seminario de Diseño de Interfaces Digitales.pdf')"> Diseño de Interfaces Digitales — UNLP</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Desarrollo de Apps Móviles.pdf')">Desarrollo de Apps Móviles — Google &amp; Universidad Complutense de Madrid</button></li>
+          </ul>
+        </div>
+        <div class="cert-group">
+          <h4>IA &amp; Productividad</h4>
+          <ul>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Curso Inteligencia Artificial.pdf')">Inteligencia Artificial — CSB Global</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Mejora tu Productividad con IA.png')">Mejora tu Productividad con IA — Google</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL CERTIFICADO -->
+  <div class="cert-modal-fondo" id="certModalFondo">
+    <div class="cert-modal-caja">
+      <div class="cert-modal-header">
+        <h3 class="cert-modal-titulo" id="certModalTitulo">Certificado</h3>
+        <div class="cert-modal-acciones">
+          <a class="cert-modal-descargar" id="certModalDescargar" download>Descargar</a>
+          <button class="cert-modal-cerrar" id="certModalCerrar" aria-label="Cerrar">✕</button>
+        </div>
+      </div>
+      <div class="cert-modal-body" id="certModalBody"></div>
+    </div>
+  </div>
+
+  <footer>Tomás Valentino Pianelli — CV actualizado 2026</footer>
+
+</div>
+
+<script>
+  function abrirCert(ruta, tipo, titulo) {
+    var fondo = document.getElementById('certModalFondo');
+    var body = document.getElementById('certModalBody');
+    var tituloEl = document.getElementById('certModalTitulo');
+    var descargar = document.getElementById('certModalDescargar');
+
+    tituloEl.textContent = titulo;
+    descargar.href = ruta;
+
+    body.innerHTML = '';
+    if (tipo === 'img') {
+      var img = document.createElement('img');
+      img.src = ruta;
+      img.alt = titulo;
+      body.appendChild(img);
+    } else {
+      var iframe = document.createElement('iframe');
+      iframe.src = ruta;
+      body.appendChild(iframe);
+    }
+
+    fondo.classList.add('abierto');
+  }
+
+  function cerrarCert() {
+    document.getElementById('certModalFondo').classList.remove('abierto');
+    document.getElementById('certModalBody').innerHTML = '';
+  }
+
+  document.getElementById('certModalCerrar').addEventListener('click', cerrarCert);
+  document.getElementById('certModalFondo').addEventListener('click', function (e) {
+    if (e.target === this) cerrarCert();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') cerrarCert();
+  });
+</script>
+
+</body>
+</html>
