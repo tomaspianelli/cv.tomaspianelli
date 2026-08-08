@@ -134,6 +134,13 @@
     border:1px solid var(--black);
   }
   .entry-link:hover{ background:#ffffff; color:var(--black); }
+  .entry-links{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:16px;
+  }
+  .entry-links .entry-link{ margin-top:0; }
   .entry ul{
     margin:0;
     padding-left:18px;
@@ -294,6 +301,7 @@
         <a href="mailto:tomas.v.pianelli@gmail.com">tomas.v.pianelli@gmail.com</a>
         <span>+54 9 11 6925-2806</span>
         <span>La Plata, Argentina</span>
+        <a href="https://github.com/tomaspianelli" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/tomas-valentino-pianelli-8616182b2/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.behance.net/tomspianelli" target="_blank" rel="noopener">Behance</a>
       </div>
@@ -313,6 +321,7 @@
         <span class="entry-date">2024 — actualidad</span>
       </div>
       <p class="plain">UNLP — Universidad Nacional de La Plata</p>
+      <a class="entry-link" href="https://www.figma.com/design/4tEnNbY3qqZRYIuZC6NBaA/Portfolio-UNLP?node-id=0-1&t=QggwqBRYTnBej9R4-1" target="_blank" rel="noopener">Ver portfolio en Figma →</a>
     </div>
     <div class="entry">
       <div class="entry-head">
@@ -343,7 +352,7 @@
         <li>Administración simultánea de múltiples campañas con enfoque en eficiencia publicitaria y mejora continua.</li>
       </ul>
       <!-- 👉 PONÉ ACÁ EL LINK: reemplazá REEMPLAZAR_LINK_1 por la URL del trabajo/sitio -->
-      <a class="entry-link" href="https://tomaspianelli.github.io/Paid-Media-Marketing-Digital/" target="_blank" rel="noopener">Ver sitio →</a>
+      <a class="entry-link" href="REEMPLAZAR_LINK_1" target="_blank" rel="noopener">Ver sitio →</a>
     </div>
 
     <div class="entry">
@@ -363,8 +372,10 @@
         <li>Análisis de experiencia de usuario y detección de oportunidades de mejora enfocadas en conversión (CRO).</li>
         <li>Colaboración continua con equipos de marketing y performance para alineación estratégica y seguimiento de cuentas.</li>
       </ul>
-      <!-- 👉 PONÉ ACÁ EL LINK: reemplazá REEMPLAZAR_LINK_2 por la URL del trabajo/sitio -->
-      <a class="entry-link" href="https://www.performanze.com/" target="_blank" rel="noopener">Ver sitio →</a>
+      <div class="entry-links">
+        <a class="entry-link" href="https://www.performanze.com/" target="_blank" rel="noopener">Ver sitio →</a>
+        <a class="entry-link" href="https://www.figma.com/design/xi3EOjjko1j1OPUwlvAsEQ/Portfolio-Performanze?node-id=0-1&t=cixJhVB5gZGyNOp5-1" target="_blank" rel="noopener">Ver portfolio en Figma →</a>
+      </div>
     </div>
 
     <div class="entry">
@@ -387,6 +398,46 @@
   </section>
 
   <section>
+    <h2 class="section-title">Proyectos Académicos</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Carrefour Argentina</h3>
+        <span class="entry-date">2025</span>
+      </div>
+      <div class="entry-sub-row">
+        <p class="entry-sub">Taller de diseño digital — UNLP</p>
+      </div>
+      <ul>
+        <li>Rediseño UX/UI de la aplicación de Carrefour, orientado a optimizar la experiencia de compra mediante un acceso más simple al escáner, la consulta de precios y la organización de productos en listas y carrito.</li>
+        <li>Herramientas: Figma, Illustrator.</li>
+        <li>Profundización en diseño centrado en las personas usuarias, diseño de flujos y componentes, priorizando la claridad, accesibilidad y eficiencia durante el recorrido de compra. La propuesta buscó reducir pasos y facilitar la planificación y el control de la compra.</li>
+      </ul>
+      <a class="entry-link" href="https://www.behance.net/gallery/253913121/Nueva-Aplicacion-de-Carrefour-Case-study" target="_blank" rel="noopener">Ver case study →</a>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Vandal</h3>
+        <span class="entry-date">2026</span>
+      </div>
+      <div class="entry-sub-row">
+        <p class="entry-sub">Taller de diseño para la web — UNLP</p>
+      </div>
+      <ul>
+        <li>Rediseño UX/UI de un medio especializado en videojuegos, enfocado en mejorar la navegación, reorganizar la arquitectura de la información y potenciar la participación de la comunidad.</li>
+        <li>Herramientas: Figma, Illustrator, Adobe Premiere y Visual Studio Code (HTML, CSS y JS).</li>
+        <li>Desarrollo de habilidades en investigación UX, arquitectura de información, diseño de interfaces y creación de sistemas visuales consistentes, trabajando de forma colaborativa durante todo el proceso.</li>
+      </ul>
+      <div class="entry-links">
+        <a class="entry-link" href="https://www.behance.net/gallery/253650165/Nueva-identidad-Vandal-Case-study" target="_blank" rel="noopener">Ver case study →</a>
+        <a class="entry-link" href="https://tomaspianelli.github.io/Vandal/" target="_blank" rel="noopener">Ver código en vivo →</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
     <h2 class="section-title">Habilidades</h2>
     <div class="skills-block">
       <h4>Marketing Digital &amp; Performance</h4>
@@ -394,7 +445,7 @@
     </div>
     <div class="skills-block">
       <h4>Diseño &amp; Herramientas</h4>
-      <p>Figma, Affinity, CapCut, Canva, Semrush, Mailchimp, Brevo, WordPress, HTML, CSS, JavaScript</p>
+      <p>Figma, Affinity, CapCut, Canva, Semrush, Mailchimp, Brevo, WordPress, HTML, CSS, JavaScript.</p>
     </div>
   </section>
 
@@ -412,27 +463,28 @@
          En cada botón de abajo, reemplazá la ruta 'REEMPLAZAR_RUTA_...pdf' por la ubicación real
          de tu archivo (por ejemplo: 'certificados/busqueda-google-ads.pdf' o una imagen .jpg/.png).
          El segundo parámetro es el tipo de archivo: 'pdf' o 'img'.
+         El tercer parámetro es el título que se muestra arriba del modal.
          Subí los archivos reales a una carpeta /certificados junto a este index.html. -->
     <div class="cert-cols">
       <div>
         <div class="cert-group">
           <h4>Google Ads</h4>
           <ul>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Búsqueda de Google Ads 2026.pdf')">Búsqueda</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Display de Google Ads 2026.pdf')">Display</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Vídeo de Google Ads 2026.pdf')">Video</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Aplicaciones de Google Ads.pdf')">Aplicaciones</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Anuncios de Shopping Basados en IA.pdf')">Shopping con IA</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Examen de certificación en optimización de conversiones.pdf')">Optimización de Conversiones</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Búsqueda de Google Ads 2026.pdf', 'pdf', 'Certificación en Búsqueda de Google Ads')">Búsqueda</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Display de Google Ads 2026.pdf', 'pdf', 'Certificación en Display de Google Ads')">Display</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Vídeo de Google Ads 2026.pdf', 'pdf', 'Certificación en Vídeo de Google Ads')">Video</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Aplicaciones de Google Ads.pdf', 'pdf', 'Certificación en Aplicaciones de Google Ads')">Aplicaciones</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Certificación en Anuncios de Shopping Basados en IA.pdf', 'pdf', 'Certificación en Anuncios de Shopping Basados en IA')">Shopping con IA</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Examen de certificación en optimización de conversiones.pdf', 'pdf', 'Examen de certificación en optimización de conversiones')">Optimización de Conversiones</button></li>
           </ul>
         </div>
         <div class="cert-group">
           <h4>Marketing Digital</h4>
           <ul>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Fundamentos de Marketing Digital.pdf')">Fundamentos de Marketing Digital — Google &amp; The Open University</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Publicidad en Redes Avanzado.png')">Publicidad en Redes Avanzado — Coderhouse</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Storytelling en el Marketing Digital.pdf')">Storytelling en Marketing Digital — University of Chicago &amp; Santander</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Curso Marketing Digital.pdf')">Experto Marketing Digital — CSB Global</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Fundamentos de Marketing Digital.pdf', 'pdf', 'Fundamentos de Marketing Digital')">Fundamentos de Marketing Digital — Google &amp; The Open University</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Publicidad en Redes Avanzado.png', 'img', 'Publicidad en Redes Avanzado')">Publicidad en Redes Avanzado — Coderhouse</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Storytelling en el Marketing Digital.pdf', 'pdf', 'Storytelling en el Marketing Digital')">Storytelling en Marketing Digital — University of Chicago &amp; Santander</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Curso Marketing Digital.pdf', 'pdf', 'Experto en Marketing Digital')">Experto Marketing Digital — CSB Global</button></li>
           </ul>
         </div>
       </div>
@@ -440,15 +492,15 @@
         <div class="cert-group">
           <h4>Diseño &amp; Tecnología</h4>
           <ul>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Seminario de Diseño de Interfaces Digitales.pdf')"> Diseño de Interfaces Digitales — UNLP</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Desarrollo de Apps Móviles.pdf')">Desarrollo de Apps Móviles — Google &amp; Universidad Complutense de Madrid</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Seminario de Diseño de Interfaces Digitales.pdf', 'pdf', 'Seminario de Diseño de Interfaces Digitales')"> Diseño de Interfaces Digitales — UNLP</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Desarrollo de Apps Móviles.pdf', 'pdf', 'Desarrollo de Apps Móviles')">Desarrollo de Apps Móviles — Google &amp; Universidad Complutense de Madrid</button></li>
           </ul>
         </div>
         <div class="cert-group">
           <h4>IA &amp; Productividad</h4>
           <ul>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Curso Inteligencia Artificial.pdf')">Inteligencia Artificial — CSB Global</button></li>
-            <li><button class="cert-link" onclick="abrirCert('certificados/Mejora tu Productividad con IA.png')">Mejora tu Productividad con IA — Google</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Curso Inteligencia Artificial.pdf', 'pdf', 'Inteligencia Artificial')">Inteligencia Artificial — CSB Global</button></li>
+            <li><button class="cert-link" onclick="abrirCert('certificados/Mejora tu Productividad con IA.png', 'img', 'Mejora tu Productividad con IA')">Mejora tu Productividad con IA — Google</button></li>
           </ul>
         </div>
       </div>
@@ -480,14 +532,14 @@
     var tituloEl = document.getElementById('certModalTitulo');
     var descargar = document.getElementById('certModalDescargar');
 
-    tituloEl.textContent = titulo;
+    tituloEl.textContent = titulo || 'Certificado';
     descargar.href = ruta;
 
     body.innerHTML = '';
     if (tipo === 'img') {
       var img = document.createElement('img');
       img.src = ruta;
-      img.alt = titulo;
+      img.alt = titulo || 'Certificado';
       body.appendChild(img);
     } else {
       var iframe = document.createElement('iframe');
